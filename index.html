@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Haunted Kentucky: Sites of Ghostly Visitations</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2018.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2019.css">
+
+<!-- Lavendar Custom Color Scheme -->
+<style>
+  .w3-theme-l5 {color:#000 !important; background-color:#fcfafd !important}
+
+.w3-theme {color:#000 !important; background-color:#d0ade1 !important}
+.w3-text-theme {color:#d0ade1 !important}
+.w3-border-theme {border-color:#d0ade1 !important}
+
+.w3-hover-theme:hover {color:#000 !important; background-color:#d0ade1 !important}
+.w3-hover-text-theme:hover {color:#d0ade1 !important}
+.w3-hover-border-theme:hover {border-color:#d0ade1 !important}
+</style>
+
+<!-- Sandy Custom Color Scheme -->
+<style>
+  .w3-theme-a5 {color:#000 !important; background-color:#fffefc !important}
+
+.w3-theme {color:#000 !important; background-color:#f7ebca !important}
+.w3-text-theme {color:#f7ebca !important}
+.w3-border-theme {border-color:#f7ebca !important}
+
+.w3-hover-theme:hover {color:#000 !important; background-color:#f7ebca !important}
+.w3-hover-text-theme:hover {color:#f7ebca !important}
+.w3-hover-border-theme:hover {border-color:#f7ebca !important}
+</style>
+
+<!-- Body styling -->
+<style>
+body,h1,h2,h4,h5 {font-family: "Raleway", sans-serif}
+h3,p {font-family: "Cormorant", sans-serif}
+.w3-third img{margin-bottom: 0; opacity: 0.8; cursor: pointer}
+.w3-row-padding img {margin-bottom: 12px}
+.w3-third img:hover{opacity: 1}
+</style>
+</head>
+<body class="w3-theme-a4 w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-theme-l1 w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+  <h3 class="w3-padding-64 w3-center"><b>HAUNTED<br>KENTUCKY:<br>GHOSTLY<br>VISITATIONS</b></h3>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+  <a href="#myGrid" onclick="w3_close()" class="w3-bar-item w3-button">HAUNTED KY MAP</a> 
+  <a href="#zoom map" onclick="w3_close()" class="w3-bar-item w3-button">INTERACTIVE MAP</a> 
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">DATA SOURCES & INFORMATION</a> 
+  <a href="#resources" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a>
+  <p class="w3-padding-16"><button class="w3-button w3-2018-crocus-petal" onclick="myFunction()">TOGGLE GRID PADDING</button></p>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">DILNI ABEYRATHNE</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Push down content on small screens --> 
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Project section -->
+  <div class="w3-row" id="myGrid">
+    <div class="w3-third">
+      <img src="maps/KY_haunted_600dpi.png" style="width:100%" onclick="onClick(this)" alt="Reported haunted locations in Kentucky">
+      <a href='maps/KY_haunted_1200dpi.png' class="linkbox">High resolution version</a>
+    </div>
+  </div>
+
+  <!-- Space -->
+  <div class="w3-center w3-padding-16"></div>
+
+  <!-- Zoom Map -->
+  <div class="w3-center w3-padding-16" id="zoom map">
+    <h4><b>INTERACTIVE MAP</b></h4>
+    <iframe src="KY_haunted_places_names2.html" width="100%" height="640px"></iframe>
+    <a href='KY_haunted_places_names2.html' class="linkbox">Full-screen version</a>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+  </div>
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- About section -->
+  <div class="w3-container w3-2018-crocus-petal w3-center w3-text-light-gray w3-padding-32" id="about">
+    <h4><b>DATA SOURCES & INFORMATION</b></h4>
+    <div class="w3-content w3-justify w3-large" style="max-width:600px">
+      <h4>Programs & Attributions</h4>
+      <p></p>
+      <p>
+        <a href="images/Curriculum_Vitae2_DilniAbeyrathne.pdf" download="curriculum vitae">
+          <button class="w3-button w3-theme-d7 w3-padding-large w3-margin-top w3-margin-bottom">Download Curriculum Vitae (CV)</button>
+        </a>
+      </p>
+      <hr class="w3-opacity">
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-theme-a4" id="resources">  
+    <div class="w3-row-padding">
+      <div class="w3-third w3-center">
+        <h3>INFO</h3>
+        <p>Maps in this portfolio were made in classes and projects associated with the University of Kentucky. Commissioned maps are associated with the University of Kentucky and Scripps College.</p>      
+      </div>
+    
+      <div class="w3-third w3-center">
+        <h3>FIND ME</h3>
+        <p>
+          <a href="https://github.com/DTAbeyrathne">My GitHub</a>
+        </p> 
+        <p>
+          <a href="https://www.linkedin.com/in/dilni-abeyrathne-1b0152232/">My LinkedIn</a>
+        </p> 
+      </div>
+  
+      <div class="w3-third w3-center">
+        <h3>OTHER RESOURCES</h3>
+        <p>
+          Explore Mapping & GIS at the University of Kentucky!
+        </p>
+        <p>
+          <a href="https://uky-gis.github.io/#mapshop">UKy Mapping & GIS</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="w3-theme-d5 w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+  
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+<script>
+  // Toggle grid padding
+  function myFunction() {
+    var x = document.getElementById("myGrid");
+    if (x.className === "w3-row") {
+      x.className = "w3-row-padding";
+    } else { 
+      x.className = x.className.replace("w3-row-padding", "w3-row");
+    }
+  }
+
+  </script>
+
+</body>
+</html>

@@ -26,8 +26,11 @@
 <body>
   <div id="map"></div>
   <script>
-      var map = L.map('map').setView([37.89179954012925, -85.60941134926401], 14.5);
-      L.tileLayer('file:////Users/dilniabeyrathne/Documents/Documents/UKY%20MA%20Geography/new_maps_plus/map671/final_project/KY_spooks/tiles_15/{z}/{x}/{y}.png', {
+      var map = L.map('map').setView([37.89179954012925, -85.60941134926401], 8);
+  </script>
+
+  <script>
+      L.tileLayer('tiles_15/{z}/{x}/{y}.png', {
         minZoom: 4,
         maxZoom: 15,
         tms: false,

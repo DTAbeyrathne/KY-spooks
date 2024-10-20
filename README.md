@@ -5,7 +5,7 @@ Welcome to spooky Kentucky! This eerie map was created to illustrate the locatio
 
 ## Haunted Sites Data Sources
 
-The majority of haunted sites was compiled using information from [Kentucky Haunted Houses](https://www.kentuckyhauntedhouses.com/real-haunts/).Supplementary data for the Kentucky State Penitentiary, Camp Taylor, Sleepy Hollow Road, and Asbury Cemetery were sourced from these sites: 
+The majority of haunted sites was compiled using information from [Kentucky Haunted Houses](https://www.kentuckyhauntedhouses.com/real-haunts/). Supplementary data for the Kentucky State Penitentiary, Camp Taylor, Sleepy Hollow Road, and Asbury Cemetery were sourced from these sites: 
 
 * [KY State Penitentiary & Camp Taylor](https://kyforky.com/blogs/journalh/haunted-places)
 * [Sleepy Hollow Road](https://www.kentuckybb.com/Blog/Get-Haunted-and-Go-Ghost-Hunting-in-Kentucky.html)

@@ -164,13 +164,4 @@ If you've read this far, congratulations! I will now reveal the consolidation of
 
 Index.html page: [Haunted Kentucky: Ghostly Visitations](https://kyforky.com/blogs/journalh/haunted-places)
 
-
-# Project title (10 points)
-# Information about data source (10 points)
-# Link to the data source, if applicable, or a copy of the full data source for download (10 points)
-# Markdown formatting throughout the document (10 points)
-# Description about why you created the map (10 points)
-# Description about how the map was created, including any geoprocessing methods or other steps you took described in a way that someone else could try to recreate your map process in a new location (30 points)
-Active link to the final index.html page (20 points)
-# Include embedded images, as needed, to document the mapping process, including key data management or geoprocessing steps and settings (20 points)
-# Information about the projection of the original data and the projection for the final data (10 points)
+## Many thanks for reading, and Happy early Halloween! I hope this map is as fun to view as it was to create!

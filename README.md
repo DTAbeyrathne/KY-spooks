@@ -22,7 +22,7 @@ In rechecking my hauntings list, I referenced these Reddit threads to read about
 
 All of this data was compiled on a spreadsheet in Microsoft Excel, with colums for place name, location (city), hauntings (reported paranormal experiences, simplified), and a unique ID for each site. It was then saved as a .csv (comma separated values) file for use in QGIS.
 
-You can download the entire haunted data compilation here as a zip file: [KY_haunted_places.csv](data/KY_haunted_places.csv.zip)
+You can download the entire haunted data compilation here as a zip file: [KY_haunted_places.csv](data/KY_haunted_places.csv.zip) (click "view raw" to download)
 
 
 ## Other Data Sources

@@ -22,7 +22,7 @@ In rechecking my hauntings list, I referenced these Reddit threads to read about
 
 All of this data was compiled on a spreadsheet in Microsoft Excel, with colums for place name, location (city), hauntings (reported paranormal experiences, simplified), and a unique ID for each site. It was then saved as a .csv (comma separated values) file for use in QGIS.
 
-You can download the entire haunted data compilation here: <a href="data/KY_haunted_places.csv.js" download>KY_haunted_places.csv</a>
+You can download the entire haunted data compilation here: <a href="data/KY_haunted_places.csv" download>KY_haunted_places.csv</a>
 
 
 ## Other Data Sources
@@ -162,6 +162,6 @@ Additionally, I incorporated the leaflet file I had created through the generate
 
 If you've read this far, congratulations! I will now reveal the consolidation of all the maps, data, and coding this documentation (and the better part of a day) has been poring over. Get ready for the scares of a lifetime!
 
-Index.html page: [Haunted Kentucky: Ghostly Visitations](https://kyforky.com/blogs/journalh/haunted-places)
+Index.html page: [Haunted Kentucky: Ghostly Visitations](https://dtabeyrathne.github.io/KY-spooks/)
 
 ## Many thanks for reading, and Happy early Halloween! I hope this map is as fun to view as it was to create!

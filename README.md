@@ -73,6 +73,7 @@ Here are the specific steps to adding my data:
 *Parameters for adding .csv data*
 
 **Setting Projections & Clipping Data**
+
 The first step to properly compiling my data was to set the correct project. For most of the data, a projection of EPSG:3089, the Kentucky-specific coordinate system, would suffice and as such, that is what I set after going to **Project** --> **Properties** --> **CRS** --> **Search for 3089**. The original projections for the state polygon and counties data was EPSG:4269 and for the roads and rivers, it was EPSG:4326.
 
 However, I encountered an interesting and frustrating issue when trying to project my csv data with EPSG:3089--it appeared to be settled to the southwest of the state polygon and was much too small. I soon discovered that setting the csv layer's CRS to EPSG:4326 fixed the problem (this only applies to the csv data).
@@ -83,6 +84,7 @@ Next, I clipped all the data (excluding the csv) to Kentucky using **Select by E
 *Clipping to the KY polygon extent*
 
 **Styling the Data**
+
 Here's the most fun (and perhaps a bit frustrating part)--styling the csv data so it looks fire! For my spooky map, I wanted the haunted sites markers to be displayed by little glowing ghosts. To do that, I followed this workflow:
 
 1. Open up layer properties and go to symbology
@@ -97,7 +99,7 @@ Here's the most fun (and perhaps a bit frustrating part)--styling the csv data s
 
 Next, I moved onto styling the rivers and roads layers. These were fairly simple, as I only changed the colors and line width of both. For rivers, I colored the Simple Line a semi-dark red and left the line thinkness fairly thin. For roads, I colored the Simple Line pure black and made it a bit thicker to stand out.
 
-For theh KY counties, I only changed the Simple Fill to a vibrant, semi-dark red (lighter than the color for the rivers) and the stroke to a semi-dark gray. The KY polygon was where the really interesting styling happened.
+For the KY counties, I only changed the Simple Fill to a vibrant, semi-dark red (lighter than the color for the rivers) and the stroke to a semi-dark gray. The KY polygon was where the really interesting styling happened.
 
 First, I made a duplicate of the KY state polygon layer, which I placed above the KY counties layer. Then, I went into its Symbology tab and styled the layer to have a black shapeburst fill, being mindful to set the distance so it wouldn't cover the counties (which was also done by using the Two-Color scheme and making the second color transparent).
 
@@ -107,6 +109,7 @@ First, I made a duplicate of the KY state polygon layer, which I placed above th
 Finally, I styled the original KY state polygon layer to have a Simple black Fill and a soft light-gray outer glow. This would give the back of the state a bit of a subtle, foggy glow. I had planned to have the glow be sporadically placed like real fog, but unfortunately couldn't find a way around it. This outer glow workflow was the closest second. When taken together, all these stylings merge to create one spooky-looking red and black map--exactly as intended!
 
 **Making the Interactive Zoom Map**
+
 Considering that I had 84 haunted sites to display, I felt that having a zoomable map with place names might be very beneficial to easily see where and what these sites are. To do that, I used the tool "Generate XYZ tiles (Directory)" from the processing toolbox (**Raster Tools** --> **Generate XYZ tiles (Directory)**). I wanted to create a fairly high-zoom map and as such set my zoom extent to display 4 as the min zoom and 15 as the max zoom. I did this through two different runs (4-13 and 14-15) as the tool would take a hefty bite out of my poor MacBook's processing power. Doing a 4-15 zoom level run took about 45 minutes and over 1000% of my CPU--this is primarily the reason I split up the processes to two parts. See my parameters for the tool below (if following this workflow, make sure to save the file into a directory and as a file):
 
 ![Tile creation for intereactive map](graphics/Tiles_ss.png)    
@@ -115,6 +118,7 @@ Considering that I had 84 haunted sites to display, I felt that having a zoomabl
 It still took the better part of 20 minutes, but the processes finished much faster as two steps instead of one. Once that was done, I combined all of the individual tile folders into one folder titled "Tile_15". A few tweaks in the related HTML file and viola--a pretty sweet zoomable map with all the haunted place names!
 
 **Making the Print Layout**
+
 Here's where the map really comes to fruition! This is also where my personal challenge of only using QGIS came directly into the arena. This is the story of my many headaches and emergent victories!
 
 Here is the basic workflow for getting my map onto the print layout:

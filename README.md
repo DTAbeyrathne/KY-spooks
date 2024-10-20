@@ -126,10 +126,14 @@ Here is the basic workflow for getting my map onto the print layout:
 2. Add the map using the "Add Map" button on the left
 3. Add the legend using the "Add Legend" mao button on the left
 
-Once I had all this added, I went right to work getting all the layouts as precise as possible. I wanted a more vertical-heavy layout as I wished to add in an extensive legend matching each haunted site number with its unique ID, name, and location. To do that, I first extended the page height to 485mm then added in two attribute tables (42 row limit each) from the "Add Attribute Table" button on the bottom left. Upon addition of the two table, I modified each table to only display three columns: Unique_ID, place_name, and Location (**click on layer** --> **go to "Main Properties"** --> **"Attributes"**).
+Once I had all this added, I went right to work getting all the layouts as precise as possible. I wanted a more vertical-heavy layout as I wished to add in an extensive legend matching each haunted site number with its unique ID, name, and location. To do that, I first extended the page height to 485mm then added in two attribute tables (42 row limit each) from the "Add Attribute Table" button on the bottom left. Upon addition of the two tables, I modified each table to only display three columns: Unique_ID, place_name, and Location (**click on layer** --> **go to "Main Properties"** --> **"Attributes"**).
+Additionally, the second attribute table had to be modified with a function in the "Filter With" section:  **"Unique_ID" >= '43'**. This ensures that the table doesn't show only the first 42 rows (like the first table) and instead shows the second 42 rows.
 
 ![Attribute table styling in print layout composer](graphics/Attribute_ss.png)    
 *Attribute table styling in print layout composer*
+
+![Adding a filtering function for the second attribute table](graphics/Attribute_table2_function_ss.png)    
+*Adding a filtering function for the second attribute table*
 
 Next, I added a title, a subtitle, data sources, and map attribution to the output, styling them all accordingly to fit into the map's spooky theme (AKA the attribute tables were orange, the titles red, and the legend text and data & attributions a semi-light gray). As a note, I used two specific fonts for this map: Academy Engraved LET (for the title and subtitle) and Baskerville (for everything else).
 

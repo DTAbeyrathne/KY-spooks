@@ -13,9 +13,19 @@
 <!-- Body background styling -->
 <style>
 body {
-    background-color: aliceblue;
-    
+    background-color: rgb(24, 24, 24);
+}
 
+#mySidebar {
+  background-color: rgb(111, 7, 7);
+}
+
+#about {
+  background-color: rgb(161, 71, 32);
+}
+
+#resources {
+  background-color: rgb(109, 57, 24);
 }
 
 body,h1,h2,h4,h5 {font-family: "Raleway", sans-serif}
@@ -29,14 +39,13 @@ h3,p {font-family: "Cormorant", sans-serif}
 <body class="w3-theme-a4 w3-content" style="max-width:1600px">
 
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-bar-block w3-theme-l1 w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+<nav class="w3-sidebar w3-bar-block w3-theme-l1 w3-animate-left w3-text-light-gray w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
   <h3 class="w3-padding-64 w3-center"><b>HAUNTED<br>KENTUCKY:<br>GHOSTLY<br>VISITATIONS</b></h3>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
   <a href="#myGrid" onclick="w3_close()" class="w3-bar-item w3-button">HAUNTED KY MAP</a> 
-  <a href="#zoom map" onclick="w3_close()" class="w3-bar-item w3-button">INTERACTIVE MAP</a> 
+  <a href="#zoom_map" onclick="w3_close()" class="w3-bar-item w3-button">INTERACTIVE MAP</a> 
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">DATA SOURCES & INFORMATION</a> 
   <a href="#resources" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a>
-  <p class="w3-padding-16"><button class="w3-button w3-2018-crocus-petal" onclick="myFunction()">TOGGLE GRID PADDING</button></p>
 </nav>
 
 <!-- Top menu on small screens -->
@@ -55,7 +64,7 @@ h3,p {font-family: "Cormorant", sans-serif}
   <div class="w3-hide-large" style="margin-top:83px"></div>
   
   <!-- Project section -->
-  <div class="w3-row" id="myGrid">
+  <div class="w3-center w3-text-light-gray" id="myGrid">
       <img src="maps/KY_haunted_600dpi.png" style="width:100%" onclick="onClick(this)" alt="Reported haunted locations in Kentucky">
       <a href='maps/KY_haunted_1200dpi.png' class="linkbox">High resolution version</a>
   </div>
@@ -64,9 +73,9 @@ h3,p {font-family: "Cormorant", sans-serif}
   <div class="w3-center w3-padding-16"></div>
 
   <!-- Zoom Map -->
-  <div class="w3-center w3-padding-16" id="zoom map">
+  <div class="w3-center w3-padding-16 w3-text-light-gray" id="zoom_map">
     <h4><b>INTERACTIVE MAP</b></h4>
-    <iframe src="KY_haunted_places_names2.html" width="100%" height="640px"></iframe>
+    <iframe src="KY_haunted_places_names2.html" width="100%" height="640px" frameborder="0"></iframe>
     <a href='KY_haunted_places_names2.html' class="linkbox">Full-screen version</a>
   </div>
 
@@ -84,7 +93,7 @@ h3,p {font-family: "Cormorant", sans-serif}
   </div>
 
   <!-- About section -->
-  <div class="w3-container w3-2018-crocus-petal w3-center w3-text-light-gray w3-padding-32" id="about">
+  <div class="w3-container w3-center w3-text-light-gray w3-padding-32" id="about">
     <h4><b>DATA SOURCES & INFORMATION</b></h4>
     <div class="w3-content w3-justify w3-large" style="max-width:600px">
       <h4>Programs & Attributions</h4>
@@ -105,11 +114,16 @@ h3,p {font-family: "Cormorant", sans-serif}
         Finally, additional sites in Lexington and Kentucky were sourced from <a href="https://www.hauntedrooms.com/kentucky/lexington/haunted-places">Haunted Rooms (Lexington, Kentucky)</a> and
         <a href="https://www.hauntedrooms.com/kentucky/haunted-places">Haunted Rooms (Kentucky)</a>.
         
-        <hr>
+        <br>
+        <br>
 
         Finally, Kentucky state and county polygon data was obtained from the <a href="https://www.census.gov/cgi-bin/geo/shapefiles/index.php">U.S. Census Bureau</a>,
         Kentucky roads and rivers from <a href="https://www.naturalearthdata.com">Natural Earth Data</a>, 
         and the ghost raster image marker from Dilni Abeyrathne's previous spooky mapping project.
+
+        <hr>
+        <p>The full project repository can be found here: <a href="https://github.com/DTAbeyrathne/KY-spooks">KY-spooks</a>.
+        </p>
         </p>
       </p>
       <hr class="w3-opacity">
@@ -117,16 +131,22 @@ h3,p {font-family: "Cormorant", sans-serif}
   </div>
 
   <!-- Footer -->
-  <footer class="w3-container w3-padding-32 w3-theme-a4" id="resources">  
+  <footer class="w3-container w3-padding-32 w3-theme-a4 w3-text-light-gray" id="resources">  
     <div class="w3-row-padding">
+      <div class="w3-third w3-center">
+        <h3>INFO</h3>
+        <p>This map was produced in association with the New Maps Plus program (MAP671) at the University of Kentucky in Fall 2024.
+        </p>      
+      </div>
+    
+      <div class="w3-third w3-center">
         <h3>FIND ME</h3>
         <p>
-            <a href="https://github.com/DTAbeyrathne/KY-spooks">Haunted Kentucky Github Repository</a> <br>
-            <a href="https://github.com/DTAbeyrathne">My GitHub</a>
+          <a href="https://github.com/DTAbeyrathne">My GitHub</a>
         </p> 
       </div>
   
-      <div class="w3-third w3-center">
+      <div class="w3-third w3-cente">
         <h3>OTHER RESOURCES</h3>
         <p>
           Explore Mapping & GIS at the University of Kentucky!
@@ -138,7 +158,7 @@ h3,p {font-family: "Cormorant", sans-serif}
     </div>
   </footer>
 
-  <div class="w3-theme-d5 w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+  <div class="w3-theme-d5 w3-center w3-padding-24 w3-text-gray">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
   
 <!-- End page content -->
 </div>
@@ -162,21 +182,7 @@ function onClick(element) {
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
 }
-
 </script>
-
-<script>
-  // Toggle grid padding
-  function myFunction() {
-    var x = document.getElementById("myGrid");
-    if (x.className === "w3-row") {
-      x.className = "w3-row-padding";
-    } else { 
-      x.className = x.className.replace("w3-row-padding", "w3-row");
-    }
-  }
-
-  </script>
 
 </body>
 </html>

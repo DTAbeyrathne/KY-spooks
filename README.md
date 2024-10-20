@@ -147,18 +147,22 @@ Lastly, the only thing left to do is export the maps into a PNG. I exported my m
 
 And that's how you design an eye-catching spook entirely on QGIS!
 
-### 4. The Final Map and Coding HTML
+### 4. The Final Map and Coding HTML & CSS
 
 Here's a screenshot of the final map!
 
 ![Final map screenshot](graphics/Final_map_ss.png)    
 *Final map screenshot*
 
-Now since I'd finished making the actual map, it was time to display it in all it's spooky glory in an index.html file. I wanted to do something a little different from the index.html templates provided in class. As such, I used the templace for my cartography portfolio, as I felt that fit better with the way I wanted to display my static map, the interactive map, and my data sources. I copied over the HTML code from my porfolio file and set about making a number of changes to customize it to my spooky map.
+Now since I'd finished making the actual map, it was time to display it in all its spooky glory in an index.html file. I wanted to do something a little different from the index.html templates provided in class. As such, I used the templace for my cartography portfolio, as I felt that fit better with the way I wanted to display my static map, the interactive map, and my data sources. I copied over the HTML code from my porfolio file and set about making a number of changes to customize it to my spooky map, including overhauling the background & font colors, removing some features for ease of use, and other minor changes. As perhaps expected, coding this template to fit my desires took quite a few hours of trial, error, and many Internet searches. However, it all turned out well and I learned some valuable skills from stumbling along!
 
-Additionally, I incorporated the leaflet file I had created through the generate tiles tool in QGIS into the index.html file, making a space to display the interactive map. 
+Additionally, I incorporated the leaflet file I had created through the generate tiles tool in QGIS into the index.html file, making a space to display the interactive map. Getting the map to actually display took some time, but a few tweaks to the filepath set the code right on track!
 
+### 5. Get Ready for the Spooky
 
+If you've read this far, congratulations! I will now reveal the consolidation of all the maps, data, and coding this documentation (and the better part of a day) has been poring over. Get ready for the scares of a lifetime!
+
+Index.html page: [Haunted Kentucky: Ghostly Visitations](https://kyforky.com/blogs/journalh/haunted-places)
 
 
 # Project title (10 points)
@@ -169,4 +173,4 @@ Additionally, I incorporated the leaflet file I had created through the generate
 # Description about how the map was created, including any geoprocessing methods or other steps you took described in a way that someone else could try to recreate your map process in a new location (30 points)
 Active link to the final index.html page (20 points)
 # Include embedded images, as needed, to document the mapping process, including key data management or geoprocessing steps and settings (20 points)
-Information about the projection of the original data and the projection for the final data (10 points)
+# Information about the projection of the original data and the projection for the final data (10 points)
